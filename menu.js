@@ -1,15 +1,14 @@
 // begin with a blank/new order
 var order = '';
 
-
 // build a function to ask questions
 
 function question(questionText, realAnswer) {
-  var answerInput = prompt(questionText);
-	if (answerInput.toUpperCase() === realAnswer(1) || 
-		answerInput.toUpperCase() === realAnswer(2) ||
-		answerInput.toUpperCase() === realAnswer(3) ||){
-		order += answerInput;
+	var answerInput = prompt(questionText);
+	if (answerInput.toUpperCase() === realAnswer[0] || 
+		answerInput.toUpperCase() === realAnswer[1] ||
+		answerInput.toUpperCase() === realAnswer[2] ) {
+		order += " " + answerInput;
 	}
 }
 
